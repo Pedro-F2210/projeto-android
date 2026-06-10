@@ -13,10 +13,18 @@
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
+    line-height: 1.5;
 }
 
 p {
     text-indent: 20px;
+    line-height: 1.5;
+    margin-top: 5.5px;
+    margin-bottom: 11.5px;
+}
+
+picture {
+    margin: 10px;
 }
 
 header {
@@ -24,6 +32,12 @@ header {
     background-image: linear-gradient(to bottom, #3DD973, #39BF68, #2A8C4C, #22733F, #1A5C38);
     min-height: 150px;
     padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+main header {
+   min-height: 30px;
+   border-radius: 10px  10px 0px 0px;
 }
 
 header > h1 {
@@ -40,7 +54,7 @@ h1 {
 }
 
 nav {
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    box-shadow: 24px 33px 11px  rgba(0, 0, 0, 0.192);
 }
 
 nav > a {
@@ -48,6 +62,8 @@ nav > a {
     padding: 10px;
     text-decoration: none;
     transition-duration: 0.5s;
+    border-radius: 5px;
+    margin-right: 5px;
 }
 
 header > p {
@@ -56,17 +72,22 @@ header > p {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
     font-size: 1.2em;
     max-width: 500px;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 15px 10px;
     margin: auto;
 }
 
 a {    
-    padding: 20px 10px 10px;
-    color: white;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
-    border-radius: 5px;
+}
+
+main a {
+    background-color: #39BF68;
+    color: #122e1e;
+}
+
+main a::after {
+    content: ' 🔗';
 }
 
 #home {
@@ -99,13 +120,17 @@ main > img {
 h2 {
     font-family: 'idroid', sans-serif;
     color: #1A5C38;
+    line-height: 1.5;
 }
 
 h3 {
+    line-height: 1.5;
     font-family: 'idroid', sans-serif;
     color: #1A5C38;
     background-image: linear-gradient(to right, #9ccbac,transparent);
     display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
     padding-left: 8px;
 }
 
@@ -165,17 +190,11 @@ footer {
     background-color: #1A5C38;
     color: white;
     font-size: 0.8 em;
-    padding: 10px;
-    margin-top: 20px;    
+    padding: 0px;
+    margin-top: 10px;    
 }
 
-footer p {
-    margin: 0;
-}
 
-.destaque_footer {
-    font-weight: bold;
-}
 
 #sub_header {
     background-image: none;
@@ -183,6 +202,12 @@ footer p {
     font-weight: bold;
     margin: 5px 0px 0px 0px;
     padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 :root {
